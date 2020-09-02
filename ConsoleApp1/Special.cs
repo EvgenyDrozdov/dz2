@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.CompilerServices;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,9 +7,16 @@ namespace ConsoleApp1
 {
     abstract class Special : hr
     {
-        public string WaitForYourSalary()
+        public void WaitForYourSalary(string money)
         {
-            return "Ждать зарплату";
+            if (money.ToLower() == "Зарплата")
+            {
+                Console.WriteLine("Ура, гуляем!!");
+            }
+            else
+            {
+                Console.WriteLine("Как задерживают????");
+            }
         }
         public void performWork()
         {

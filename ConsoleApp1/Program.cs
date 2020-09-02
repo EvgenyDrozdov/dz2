@@ -6,7 +6,10 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            admin admin1 = new admin();
+            Console.WriteLine(admin1.whine());
+
+
         }
     }
 }
